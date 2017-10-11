@@ -122,4 +122,11 @@ body {
     }
 }
 
-.onmousemove{}
+.nav{
+  text-align: center;
+}
+
+.navbar-nav .nav-item{
+  float: inherit;
+  display: inline-block;
+}
