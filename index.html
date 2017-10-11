@@ -28,23 +28,20 @@
         
     body, html {
         height: 100%;
+        font-family: "Open Sans", sans-serif; !important;
     }
-
     /* The hero image */
     .hero-image {
         /* The image used */
         background-image: url("https://images-na.ssl-images-amazon.com/images/M/MV5BZWIxYjU4NmItZWE4NC00ZDI1LWIxYzgtMDMwZTQ0OTBhYTI3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg");
-
         /* Set a specific height */
         height: 50%;
-
         /* Position and center the image to scale nicely on all screens */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;*/
     }
-
     /* Place text in the middle of the image */
     .hero-text {
         text-align: center;
@@ -55,6 +52,25 @@
         color: white;
     }
 
+    #orange {
+        background-color: #D64309;
+        color: white;
+        border-radius: 0%; !important;
+        height: 100px;
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        font-family: "Open Sans", sans-serif;
+    }
+
+        #blue {
+        background-color: #0033A0;
+        color: white;
+        border-radius: 0%; !important;
+        height: 100px;
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        font-family: "Open Sans", sans-serif;
+    }
     </style>
 
 </head>
@@ -108,15 +124,38 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-
-                
-
                 <h1>Simple Sidebar</h1>
                 <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                 <p>Make sure to keep all page content within the <code>#page-content-wrapper</code><a href="https://images-na.ssl-images-amazon.com/images/I/71hpgAYTi7L._SY355_.jpg">.</a></p>
                 <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
             </div>
         </div>
+
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <button id="orange"  class="btn btn-block btn-lg">SOCIAL MEDIA TIPS</button>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <button id="blue"  class="btn btn-block btn-lg">SOCIAL MEDIA TIPS</button>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <button id="orange"  class="btn btn-block btn-lg">SOCIAL MEDIA TIPS</button>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
         <!-- /#page-content-wrapper -->
 <div>
   <nav class="navbar navbar-inverse">
