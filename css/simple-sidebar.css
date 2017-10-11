@@ -122,11 +122,15 @@ body {
     }
 }
 
-.nav{
-  text-align: center;
-}
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
 
-.navbar-nav .nav-item{
-  float: inherit;
-  display: inline-block;
+.center {
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
 }
