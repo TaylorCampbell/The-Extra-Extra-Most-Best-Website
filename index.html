@@ -32,6 +32,7 @@
         height: 100%;
         font-family: "Open Sans", sans-serif; !important;
     }
+
     /* The hero image */
     .hero-image {
         /* The image used */
@@ -60,8 +61,6 @@
         border-radius: 0%; !important;
         height: 100px;
         margin-bottom: 20px;
-        font-size: 2.5em;
-        font-family: "Open Sans", sans-serif;
         box-shadow: 1px 1px 2px #3F4444;
     }
 
@@ -71,10 +70,35 @@
         border-radius: 0%; !important;
         height: 100px;
         margin-bottom: 20px;
-        font-size: 2.5em;
-        font-family: "Open Sans", sans-serif;
         box-shadow: 1px 1px 2px #3F4444;
     }
+
+    #res-text{
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    @media (max-width: 500px) {
+        body{font-size: 10px;}
+        #res-text{font-size: 10px;}
+    }
+
+    @media (max-width: 800px) {
+        body{font-size: 14px;}
+        #res-text{font-size: 15px;}
+    }
+
+    @media (max-width: 1200px) {
+        body{font-size: 16px;}
+        #res-text{font-size: 20px;}
+    }
+
+    @media (min-width: 1201px) {
+        body{font-size: 18px;}
+        #res-text{font-size: 25px;}
+    }
+
+
     </style>
 
 </head>
@@ -125,8 +149,9 @@
         </div>
         <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
+    <!-- Page Content -->
+    <div class="row">    
+        <div id="page-content-wrapper col-xs-12">
             <div class="container-fluid">
                 <h1>Simple Sidebar</h1>
                 <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
@@ -134,12 +159,12 @@
                 <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
             </div>
         </div>
-
+    </div>
 
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <button id="orange"  class="btn btn-block btn-lg"><i class="fa fa-plus" aria-hidden="true"></i> SOCIAL MEDIA TIPS</button>
+            <button id="orange"  class="btn btn-block btn-lg"><h2 id="res-text"><i class="fa fa-plus" aria-hidden="true"></i> SOCIAL MEDIA TIPS</h2></button>
         </div>
         <div class="col-md-4"></div>
     </div>
@@ -147,7 +172,7 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <button id="blue"  class="btn btn-block btn-lg"><i class="fa fa-plus" aria-hidden="true"></i> BRAND STANDARDS</button>
+            <button id="blue"  class="btn btn-block btn-lg"><h2 id="res-text"><i class="fa fa-plus" aria-hidden="true"></i> BRAND STANDARDS</h2></button>
         </div>
         <div class="col-md-4"></div>
     </div>
@@ -155,7 +180,7 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <button id="orange"  class="btn btn-block btn-lg"><i class="fa fa-plus" aria-hidden="true"></i> PHOTO LOGINS</button>
+            <button id="orange"  class="btn btn-block btn-lg"><h2 id="res-text"><i class="fa fa-plus" aria-hidden="true"></i> PHOTO LOGINS</h2></button>
         </div>
         <div class="col-md-4"></div>
     </div>
