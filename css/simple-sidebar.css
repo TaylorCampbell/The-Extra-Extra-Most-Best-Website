@@ -127,13 +127,3 @@ body {
 .gi-4x{font-size: 4em;}
 .gi-5x{font-size: 5em;}
 
-#parent {
-    position: relative;
-    height: 180px;
-}
-
-#child {
-    position: absolute;
-    top: 50%;
-    margin-top: -90px;
-}
