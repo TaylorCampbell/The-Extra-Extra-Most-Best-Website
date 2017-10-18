@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Marketing Intern InfoSite</title>
+    <title class="res-text"><strong>Comm Squad</strong></title>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,9 +19,12 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <script src="https://use.fontawesome.com/fe8cafe1a2.js"></script>
 
-    <script src="js/MouseEvent.js"></script>
+
 
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
@@ -32,6 +35,8 @@
         height: 100%;
         font-family: "Open Sans", sans-serif; !important;
     }
+
+
 
     /* The hero image */
     .hero-image {
@@ -114,7 +119,8 @@
 </head>
 
 
-<body onmousemove="mouse_position(event)">
+
+<body>
 
         <!-- HeroImage -->
                 <div class="hero-image">
@@ -168,35 +174,35 @@
         <!-- Page Content -->
         <div class="row">
             <div class="col-md-1" style="height: 100px; background-color: #09347A;"></div>
-                <a href="#social">
+                <a href="#social" style="color:white">
                     <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #09347A;">
                         <div style="height: 15px"></div>
                         <div class="align-self-center glyphicon glyphicon-cloud gi-2x"></div>
                         <div><strong>SOCIAL MEDIA</strong></div>
                     </div>
                 </a>
-                <a href="#brand">
+                <a href="#brand" style="color:white">
                     <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #09347A;">
                         <div style="height: 15px"></div>
                         <div class="align-self-center glyphicon glyphicon-file gi-2x"></div>
                         <div><strong>BRAND STANDARDS</strong></div>
                     </div>
                 </a>
-                <a href="#photo">
+                <a href="#photo" style="color:white">
                     <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #09347A;">
                         <div style="height: 15px"></div>
                         <div class="align-self-center glyphicon glyphicon-picture gi-2x"></div>
                         <div><strong>PHOTO LOGINS</strong></div>
                     </div>
                 </a> 
-                <a href="#">
+                <a href="#" style="color:white">
                     <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #09347A;">
                         <div style="height: 15px"></div>
                         <div class="align-self-center glyphicon glyphicon-alert gi-2x"></div>
                         <div><strong>IMPORTANT DATES</strong></div>
                     </div>
                 </a>
-               <a href="#calendar">
+               <a href="#calendar" style="color:white">
                     <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #09347A;">
                         <div style="height: 15px"></div>
                         <div class="align-self-center glyphicon glyphicon-calendar gi-2x"></div>
@@ -264,13 +270,23 @@
         <div class="col-md-2"></div>
     </div>
 
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <a name="calendar"></a>
+            <a name="photo"></a>
+            <button id="orange"  class="btn btn-block btn-lg"><h2 id="res-text">CALENDAR</h2></button>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
     <!-- Google Calendar -->
     <a name="calendar"></a>
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
         <div align="center">
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=admissions%40boisestate.edu&amp;color=%2329527A&amp;ctz=America%2FDenver" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe id="calendarFrame" style="height:800; display:block;" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=admissions%40boisestate.edu&amp;color=%2329527A&amp;ctz=America%2FDenver" style="border-width:0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
     </div>
     </div>
         <div class="col-md-2"></div>
@@ -296,6 +312,11 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/MouseEvent.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
