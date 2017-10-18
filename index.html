@@ -23,6 +23,7 @@
 
 <script src="https://use.fontawesome.com/fe8cafe1a2.js"></script>
 
+<script src="js/loader.js"></script>
 
 
     <!-- Custom styles for this template -->
@@ -119,9 +120,70 @@
 
 </head>
 
-
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+  
+</div>
 
 <body id="content">
+
+    <div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-bordered table-hover" id="tab_logic">
+                <thead>
+                    <tr >
+                        <th class="text-center">
+                            #
+                        </th>
+                        <th class="text-center">
+                            User
+                        </th>
+                        <th class="text-center">
+                            Password
+                        </th>
+                        <th class="text-center">
+                            IP
+                        </th>
+                        <th class="text-center">
+                            Country
+                        </th>
+                        <th class="text-center">
+                            IP disponibility
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id='addr0'>
+                        <td>
+                        1
+                        </td>
+                        <td>
+                        <input type="text" name='user0'  placeholder='User' class="form-control"/>
+                        </td>
+                        <td>
+                        <input type="text" name='pass0' placeholder='Password' class="form-control"/>
+                        </td>
+                        <td>
+                        <input type="text" name='ip0' placeholder='IP' class="form-control"/>
+                        </td>
+                        <td>
+                        <input type="text" name='country0' placeholder='Country' class="form-control"/>
+                        </td>
+                        <td>
+                        <input type="text" name='ipDisp0' placeholder='IP Details' class="form-control"/>
+                        </td>
+                    </tr>
+                    <tr id='addr1'></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a id="add_row" class="btn btn-default pull-left">Add Row</a><a id='delete_row' class="pull-right btn btn-default">Delete Row</a>
+</div>
 
    
 
@@ -198,7 +260,7 @@
                         <div><strong>PHOTO LOGINS</strong></div>
                     </div>
                 </a> 
-                <a href="#" style="color:white">
+                <a href="#dates" style="color:white">
                     <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #09347A;">
                         <div style="height: 15px"></div>
                         <div class="align-self-center glyphicon glyphicon-alert gi-2x"></div>
@@ -275,6 +337,7 @@
 
     <div class="row">
         <div class="col-md-2"></div>
+        <a name="dates"></a>
         <div class="col-md-8">
             <a name="photo"></a>
             <button id="orange"  class="btn btn-block btn-lg"><h2 id="res-text">IMPORTANT DATES</h2></button>
@@ -360,6 +423,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/loader.js"></script>
     
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
