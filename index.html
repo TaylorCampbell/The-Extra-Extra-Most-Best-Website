@@ -8,20 +8,136 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Marketing Intern InfoSite</title>
+    <title class="res-text">Comm Squad</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <script src="js/MouseEvent.js"></script>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+<script src="https://use.fontawesome.com/fe8cafe1a2.js"></script>
+
+<script src="js/loader.js"></script>
+
 
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
+    <style>
+        
+    body, html {
+        height: 100%;
+        font-family: "Open Sans", sans-serif; !important;
+    }
+
+
+
+    /* The hero image */
+    .hero-image {
+        /* The image used */
+        background-image: url("https://images-na.ssl-images-amazon.com/images/M/MV5BZWIxYjU4NmItZWE4NC00ZDI1LWIxYzgtMDMwZTQ0OTBhYTI3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg");
+        /* Set a specific height */
+        height: 50%;
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;*/
+
+    }
+
+    
+
+
+    /* Place text in the middle of the image */
+    .hero-text {
+        text-align: center;
+       position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    #orange {
+        background-color: #D64309;
+        color: white;
+        border-radius: 0%; !important;
+        height: 100px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 2px #3F4444;
+    }
+
+        #blue {
+        background-color: #0033A0;
+        color: white;
+        border-radius: 0%; !important;
+        height: 100px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 2px #3F4444;
+    }
+
+    #res-text{
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    #hamburger {
+        font-size: 40px;
+        color: white;
+    }
+
+    @media (max-width: 500px) {
+        body{font-size: 10px;}
+        #res-text{font-size: .5em;}
+    }
+
+    @media (max-width: 800px) {
+        body{font-size: 14px;}
+        #res-text{font-size: .75em;}
+    }
+
+    @media (max-width: 1200px) {
+        body{font-size: 16px;}
+        #res-text{font-size: 1em;}
+    }
+
+    @media (min-width: 1201px) {
+        body{font-size: 18px;}
+        #res-text{font-size: 1.5em;}
+    }
+
+
+    </style>
+
+
+
 </head>
 
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+  
+</div>
 
-<body onmousemove="mouse_position(event)">
+<body id="content">
+
+        <!-- HeroImage -->
+                <div class="hero-image">
+                    <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></a>
+                  <div class="hero-text">
+                    <h1><strong>Comm Squad</strong></h1>
+                    <p>Things You Need in One Place</p>
+                  </div>
+                </div>
 
     <div id="wrapper">
 
@@ -52,30 +168,260 @@
                     <a href="#">Services</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#paccy" data-toggle="collapse" data-target="#yeolpaccy">Ye 'Ol Paccy</a>
                 </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
 
+    <!-- Page Content -->
+    <div class="row">    
+        <div id="page-content-wrapper col-xs-12">
+
+
         <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <h1>Simple Sidebar</h1>
-                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code><a href="https://images-na.ssl-images-amazon.com/images/I/71hpgAYTi7L._SY355_.jpg">.</a></p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+        <div class="row">
+            <div class="col-md-1" style="height: 100px; background-color: #0072ce;"></div>
+                <a href="#social" style="color:white">
+                    <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #0072ce;">
+                        <div style="height: 15px"></div>
+                        <div class="align-self-center glyphicon glyphicon-cloud gi-2x"></div>
+                        <div><strong>SOCIAL MEDIA</strong></div>
+                    </div>
+                </a>
+                <a href="#brand" style="color:white">
+                    <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #0072ce;">
+                        <div style="height: 15px"></div>
+                        <div class="align-self-center glyphicon glyphicon-file gi-2x"></div>
+                        <div><strong>BRAND STANDARDS</strong></div>
+                    </div>
+                </a>
+                <a href="#photo" style="color:white">
+                    <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #0072ce;">
+                        <div style="height: 15px"></div>
+                        <div class="align-self-center glyphicon glyphicon-picture gi-2x"></div>
+                        <div><strong>PHOTO LOGINS</strong></div>
+                    </div>
+                </a> 
+                <a href="#dates" style="color:white">
+                    <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #0072ce;">
+                        <div style="height: 15px"></div>
+                        <div class="align-self-center glyphicon glyphicon-alert gi-2x"></div>
+                        <div><strong>IMPORTANT DATES</strong></div>
+                    </div>
+                </a>
+               <a href="#calendar" style="color:white">
+                    <div id="res-text" class="col-md-2 text-center align-self-center" style="height: 100px; background-color: #0072ce;">
+                        <div style="height: 15px"></div>
+                        <div class="align-self-center glyphicon glyphicon-calendar gi-2x"></div>
+                        <div><strong>CALENDAR</strong></div>
+                    </div>
+                </a>
+        <div class="col-md-1" style="height: 100px; background-color: #0072ce;"></div>
+</div>
+
+            <div class="container-fluid" style="height: 50px">
+
+               
+               
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
+    </div>
+
+     <div class="row">
+        <div class="col-md-2"></div>
+        
+        <div class="col-md-8">
+            <a name="social"></a>
+            <button id="orange"  class="btn btn-block btn-lg" data-toggle="collapse" data-target="#socialtoggle"><h2 class="res-text"><i class="fa fa-plus" aria-hidden="true"></i> SOCIAL MEDIA TIPS</h2></button>
+            <div id="socialtoggle" class="row collapse">
+             <div class="col-md-2"></div>
+             <div class="col-md-8">
+             <button class="btn btn-block btn-small" data-toggle="collapse" data-target="#2016ExpectationsTrend" style="color: white; margin-bottom: 20px; background-color: #406098"><h2 class="res-text"><i class="fa fa-plus" aria-hidden="true"></i> 2016 E Expectations PDF</h2></button>
+            </div>
+            <div class="col-md-2"></div>
+
+<div class="row">
+    
+
+            <div class="col-md-2"></div>
+
+
+            <div class="col-md-8">
+                <div id="2016ExpectationsTrend" class="collapse">
+
+                         <object data="https://static.askadmissions.net/boisestate/UserMedia/CommSite/2016_E_Expectations_Trend_Report_1.0.pdf" type="application/pdf" width="100%" height="800px"> 
+                            <p>It appears you don't have a PDF plugin for this browser.
+                            No biggie... you can <a href="https://static.askadmissions.net/boisestate/UserMedia/CommSite/2016_E_Expectations_Trend_Report_1.0.pdf">click here to
+                            download the PDF file.</a></p>  
+                         </object>
+                     </div>
+                     
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+            </div>
+
+        <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        
+        <div class="col-md-8">
+        <a href="https://brandstandards.boisestate.edu/" name="brand" target="_blank">
+            <button id="blue"  class="btn btn-block btn-lg"><h2 class="res-text"><i class="fa fa-arrow-right" aria-hidden="true"></i> BRAND STANDARDS</h2></button></a>
+        </div>
+        
+        <div class="col-md-2"></div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <a name="photo"></a>
+            <button id="orange"  class="btn btn-block btn-lg" data-toggle="collapse" data-target="#phototoggle"><h2 class="res-text"><i class="fa fa-plus" aria-hidden="true"></i> PHOTO LOGINS</h2></button>
+
+            <div id="phototoggle" class="row collapse">
+             <div class="col-md-2"></div>
+             <div class="col-md-8">
+             <div class="well"><p class="text-center">Photo Login goes here.</p></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+ <!--importantDates-->
+
+ <hr>
+     
+ </style>>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <a name="dates"></a>
+        <div class="col-md-8">
+            <a name="photo"></a>
+            <button id="orange" style="background-color: #0072ce;" class="btn btn-block btn-lg"><h2 id="res-text">IMPORTANT DATES</h2></button>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+<div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+        <div align="center">
+        <div class="container" style="background-color: #0033A0; margin-bottom: 20px; color: white; width: 100%">
+        <style>
+        .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #D64309;
+}
+</style>         
+  <table  class="table table-hover">
+    <thead>
+      <tr>
+        <th>Event</th>
+        <th>Date Due</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Apply Now</td>
+        <td>Oct. 13th</td>
+        <td>Hell on Earth</td>
+      </tr>
+      <tr>
+        <td>Oct. 13th</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>Hell on Earth</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
     </div>
+    </div>
+        <div class="col-md-2"></div>
+    </div>
+    <!-- Important Dates Table -->
+    
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <a name="calendar"></a>
+            <a name="photo"></a>
+            <button id="orange"  class="btn btn-block btn-lg" style="background-color: #406098;"><h2 id="res-text">CALENDAR</h2></button>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <!-- Google Calendar -->
+    <a name="calendar"></a>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+        <div align="center">
+        <iframe id="calendarFrame" style="height:800; display:block;" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=admissions%40boisestate.edu&amp;color=%2329527A&amp;ctz=America%2FDenver" style="border-width:0" width="100%" height="900" frameborder="0" scrolling="no"></iframe>
+    </div>
+    </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <!-- Pacman -->
+    <a name="pacccy"></a>
+    <div id="yeolpaccy" class="collapse" align="center">
+
+
+
+    </div>
+
+                     </div>
+
+                     </div>
+                 </div>
+             
+
+                 
+                 
+
+        <!-- /#page-content-wrapper -->
+
+
     <!-- /#wrapper -->
 
     <!-- Bootstrap core JavaScript -->
+
+        <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/loader.js"></script>
+    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="js/MouseEvent.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
