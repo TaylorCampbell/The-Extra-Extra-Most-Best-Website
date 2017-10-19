@@ -1,0 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #000;
+    text-align: center;
+    color: #FFF;
+    font-family: "Quicksand", sans-serif;
+}
